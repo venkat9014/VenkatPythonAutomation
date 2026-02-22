@@ -1,6 +1,9 @@
 name: Hello World
 
-on: [workflow_dispatch] # Allows the workflow to be triggered manually
+on:
+  pull_request:
+    branches:
+    - main
 
 jobs:
   build:
